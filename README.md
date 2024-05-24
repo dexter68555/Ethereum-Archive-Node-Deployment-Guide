@@ -6,9 +6,9 @@ Please create the instance/cloud in your preferred cloud platform.
 
 Step 2: <br/>
 Install docker and docker-compose by running the following command. <br/>
-curl -fsSL https://get.docker.com -o get-docker.sh
-DRY_RUN=1 sudo sh ./get-docker.sh
-sudo apt install docker-compose
+curl -fsSL https://get.docker.com -o get-docker.sh <br/>
+DRY_RUN=1 sudo sh ./get-docker.sh <br/>
+sudo apt install docker-compose <br/>
 sudo usermod -aG docker $USER <br/>
 
 Step 3: <br/>
