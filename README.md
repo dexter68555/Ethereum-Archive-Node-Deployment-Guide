@@ -6,10 +6,12 @@ Please create the instance/cloud in your preferred cloud platform.
 
 Step 2: <br/>
 Install docker and docker-compose by running the following command. <br/>
-curl -fsSL https://get.docker.com -o get-docker.sh <br/>
-DRY_RUN=1 sudo sh ./get-docker.sh <br/>
-sudo apt install docker-compose <br/>
-sudo usermod -aG docker $USER <br/>
+```sh
+curl -fsSL https://get.docker.com -o get-docker.sh
+DRY_RUN=1 sudo sh ./get-docker.sh
+sudo apt install docker-compose
+sudo usermod -aG docker $USER
+```
 
 Step 3: <br/>
 Now we will proceed to install Execution client and Consensus client. In this guide, we will use Geth as the Execution client and Prysm as the Consensus client.
@@ -22,6 +24,8 @@ In this guide, we will configure the Geth Garbage Collector to keep the old data
 
 Step 4: <br/>
 Please run the following command to deploy and start your Ethereum archive node. <br/>
-docker-compose up -d <br/>
+```sh
+docker-compose up -d
+```
 
 Since this is an archive node, the syncing process will take up to 3 weeks to complete.
